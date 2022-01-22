@@ -1,0 +1,18 @@
+<form action="{{ url_for('predict')}}" method="post" enctype="multipart/form-data">
+  <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <input type="submit">
+</form>
+
+   <br>
+   <br>
+   {{ img_path }}
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
